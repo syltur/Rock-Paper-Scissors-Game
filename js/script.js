@@ -18,7 +18,7 @@ if (randomNumber == 1){
 	computerMove = 'papier';
 	printMessage('Ruch komputera to : ' + computerMove);
 } else if (randomNumber == 3) {
-	computerMove = 'nożyczki';
+	computerMove = 'nożyce';
 	printMessage('Ruch komputera to : ' + computerMove);
 }
 
@@ -28,14 +28,21 @@ console.log('Gracz wpisał: ' + playerInput);
 
 let playerMove = 'nieznany ruch';
 
-if(playerInput == '1'){
+if(playerInput == 1){
   playerMove = 'kamień';
   printMessage('Twój ruch to: ' + playerMove);
 } else if (playerInput == 2) {
-	playerMove = 'nożyczki';
+	playerMove = 'papier';
 	printMessage('Twój ruch to: ' + playerMove);
 } else if (playerInput == 3) {
-	playerMove = 'nożyczki';
+	playerMove = 'nożyce';
 	printMessage('Ruch komputera to : ' + playerMove);
+}
+if(playerMove === 'kamień' && computerMove === "kamień"){
+    printMessage('Remis ');
+} else if (playerMove === 'kamień' && computerMove === "papier"){
+    printMessage('Przykro mi, przegrałeś rozgrywkę. ');
+} else if (playerMove === 'kamień' && computerMove === "nożyce"){
+    printMessage('Gratuluję! Wgrałeś rozgrywkę. ');
 }
 
