@@ -34,7 +34,7 @@ if(playerInput == 1){
 	printMessage('Twój ruch to: ' + playerMove);
 } else if (playerInput == 3) {
 	playerMove = 'nożyce';
-	printMessage('Ruch komputera to : ' + playerMove);
+	printMessage('Twój ruch to: ' + playerMove);
 }
 if(playerMove === 'kamień' && computerMove === 'kamień'){
     printMessage('Remis '); 
