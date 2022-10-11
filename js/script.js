@@ -21,7 +21,15 @@ function getMoveName(randomNumber){
 let playerMove = getMoveName(playerInput);
 
 printMessage('Ruch komputera to: ' + computerMove);
-printMessage('Mój ruch to: ' + playerMove);
+
+function checkPlayerInput(argplayerMove){
+    if (argplayerMove == 1, argplayerMove == 2, argplayerMove == 3){
+    printMessage('Mój ruch to: ' + argplayerMove);
+}else {
+    printMessage('Wpisałeś błędny numer!');
+}
+}
+let inputCheck = checkPlayerInput(playerMove);
 
 function displayResult(argComputerMove, argPlayerMove){
     if(argPlayerMove === 'kamień' && argComputerMove === 'kamień'){
