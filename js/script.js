@@ -7,10 +7,10 @@ function playGame(playerInput){
     function getMoveName(randomNumber){
         
         if( randomNumber == 1){
-        return 'kamień';
+        return 'papier';
         }
         else if( randomNumber == 2){
-            return 'papier';
+            return 'kamień';
         }
         else if( randomNumber == 3){
             return 'nożyce';
@@ -49,28 +49,28 @@ function playGame(playerInput){
         let result = displayResult(computerMove, playerMove); 
 }
 
-function buttonClicked1(){
+function imgClicked1(){
 
     playGame(1);
   }
   
-  let playPaper = document.getElementById('play-paper');
+  let playPaper = document.getElementById('img-paper');
   
-  playPaper.addEventListener('click', buttonClicked1);
+  playPaper.addEventListener('click', imgClicked1);
 
-  function buttonClicked2(){
+  function imgClicked2(){
     playGame(2);
   }
   
-  let playRock = document.getElementById('play-rock');
+  let playRock = document.getElementById('img-rock');
   
-  playRock.addEventListener('click', buttonClicked2);
+  playRock.addEventListener('click', imgClicked2);
 
-  function buttonClicked3(){
+  function imgClicked3(){
     playGame(3);
   }
   
-  let playScissors = document.getElementById('play-scissors');
+  let playScissors = document.getElementById('img-scissors');
   
-  playScissors.addEventListener('click', buttonClicked3);
+  playScissors.addEventListener('click', imgClicked3);
  
